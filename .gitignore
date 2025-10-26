@@ -1,0 +1,213 @@
+# ------------------------------
+# Visual Studio general
+# ------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.cachefile
+*.dbmdl
+*.VC.db
+*.VC.VC.opendb
+
+# ------------------------------
+# Build results
+# ------------------------------
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.nupkg
+*.snupkg
+*.appx
+*.appxbundle
+*.appxupload
+*.msix
+*.msixbundle
+*.msixupload
+
+# ------------------------------
+# NuGet packages
+# ------------------------------
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# ------------------------------
+# Rider / JetBrains IDE
+# ------------------------------
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# ------------------------------
+# User-specific files
+# ------------------------------
+*.rsuser
+*.suo
+*.user
+*.userprefs
+*.csproj.user
+*.jfm
+*.tlog
+
+# ------------------------------
+# Visual Studio profiler
+# ------------------------------
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ------------------------------
+# ASP.NET stuff
+# ------------------------------
+App_Data/
+*.publishsettings
+*.pubxml
+*.publishproj
+Generated_Code/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+BundleArtifacts/
+wwwroot/lib/
+
+# ------------------------------
+# Logs and temporary files
+# ------------------------------
+*.log
+*.tlog
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+# ------------------------------
+# ReSharper
+# ------------------------------
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ------------------------------
+# Test results
+# ------------------------------
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# ------------------------------
+# Publish output
+# ------------------------------
+publish/
+dist/
+out/
+build/
+BundleArtifacts/
+*.Publish.xml
+
+# ------------------------------
+# Other tooling
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+coverage/
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------
+# OS-specific files
+# ------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.cache/
+.project
+.settings/
+local.properties
+
+# ------------------------------
+# Backup and archive files
+# ------------------------------
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# ------------------------------
+# Entity Framework / Migrations
+# ------------------------------
+Migrations/
+*.db
+*.sqlite
+*.mdf
+*.ldf
+*.ndf
+
+# ------------------------------
+# Dotnet tools and secrets
+# ------------------------------
+dotnet-tools.json
+secrets.json
+*.dotCover
+*.dotTrace
+*.dotMemory
+
+# ------------------------------
+# Azure artifacts
+# ------------------------------
+*.azurePubxml
+*.azurePublishSettings
