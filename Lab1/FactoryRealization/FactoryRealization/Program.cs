@@ -2,13 +2,13 @@
 {
     public static void Main(string[] args)
     {
-        CreateDogFactory createDogFactory = new CreateDogFactory();
+        IAnimalFactory createDogFactory = new CreateDogFactory();
         var dogAnimal = createDogFactory.CreateAnimal();
         dogAnimal.LiveTime();
-        CreateCowFactory createCowFactory = new CreateCowFactory();
+        IAnimalFactory createCowFactory = new CreateCowFactory();
         var cowAnimal = createCowFactory.CreateAnimal();
         cowAnimal.LiveTime();
-        CreateCatFactory createCatFactory = new CreateCatFactory();
+        IAnimalFactory createCatFactory = new CreateCatFactory();
         var catAnimal = createCatFactory.CreateAnimal();
         catAnimal.LiveTime();
     }
