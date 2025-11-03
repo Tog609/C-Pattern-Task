@@ -1,4 +1,4 @@
-﻿public class Logger
+﻿public sealed class Logger
 {
     private static readonly Logger _instance = new Logger();
 
