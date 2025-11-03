@@ -12,7 +12,7 @@ public class Vehicle : Transport
 
     private Color _color;
 
-    public override string ToString()
+    public sealed override string ToString()
     {
         return $"Vehicle: Weight={_weight}, Length={_length}, MaxSpeed={_maxSpeed}, Class={_vehicleClass}, Color = {_color} WheelDrive={string.Join(", ", _wheelDrive)}";
     }

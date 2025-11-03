@@ -4,7 +4,7 @@
     {
         ICreator creator = new CargoFactory();
         creator.CreateTransport();
-        ICreator creator1 = new TankFactory();
+        ICreator creator1 = new TankFactory(); /*-Проверка реализации*/
         creator1.CreateTransport();
         ICreator creator2 = new VehicleFactory();
         creator2.CreateTransport();

@@ -6,5 +6,5 @@
 
     protected int _maxSpeed;
 
-    public abstract string ToString();
+    public  abstract string ToString();
 }

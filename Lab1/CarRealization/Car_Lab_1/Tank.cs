@@ -6,7 +6,7 @@
 
     private float _crewSize;
 
-    public override string ToString()
+    public sealed override string ToString()
     {
         return $"{_projectileColiber},{_shotsPerMinute}, {_crewSize}";
     }
