@@ -1,13 +1,19 @@
-﻿public class Cargo : Transport 
+﻿public class Cargo : Transport
 {
-    private int _tonnage;
+    public int Tonnage { get; }
+    public int TankVolume { get; }
+    public int AxlesAmount { get; }
 
-    private int _tankvolume;
-
-    private int _axlesAmount;
-
-    public sealed override string ToString()
+    public Cargo(int weight, float length, int maxSpeed, int tonnage, int tankVolume, int axlesAmount)
+        : base(weight, length, maxSpeed)
     {
-        return $"{_tonnage} {_tankvolume} {_axlesAmount}";
+        Tonnage = tonnage;
+        TankVolume = tankVolume;
+        AxlesAmount = axlesAmount;
+    }
+
+    public override string ToString()
+    {
+        return $"Cargo: Weight={Weight}, Length={Length}, MaxSpeed={MaxSpeed}, Tonnage={Tonnage}, TankVolume={TankVolume}, AxlesAmount={AxlesAmount}";
     }
 }

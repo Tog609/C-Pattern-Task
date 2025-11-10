@@ -1,4 +1,6 @@
-﻿public sealed class Logger
+﻿using System;
+
+public sealed class Logger
 {
     private static readonly Logger _instance = new Logger();
 

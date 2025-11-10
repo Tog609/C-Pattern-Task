@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Collections.Generic;
 
 public class Vehicle : Transport
 {
@@ -15,11 +16,16 @@ public class Vehicle : Transport
         {3, "coupe"}
     };
 
-    private Color _color;
+    public Color Color { get; }
 
-
-    public sealed override string ToString()
+    public Vehicle(int weight, float length, int maxSpeed, Color color)
+        : base(weight, length, maxSpeed)
     {
-        return $"Vehicle: Weight={_weight}, Length={_length}, MaxSpeed={_maxSpeed}, Class={_class}, Color = {_color} WheelDrive={string.Join(", ", _wheelDrive)}";
+        Color = color;
+    }
+
+    public override string ToString()
+    {
+        return $"Vehicle: Weight={Weight}, Length={Length}, MaxSpeed={MaxSpeed}, Color={Color}, WheelDrive={string.Join(", ", _wheelDrive)}, Class={string.Join(", ", _class)}";
     }
 }
