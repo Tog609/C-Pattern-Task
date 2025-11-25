@@ -24,7 +24,7 @@ public class Vehicle : Transport
     public Vehicle(int weight, float length, int maxSpeed, Color color, int driveType, int classType)
         : base(weight, length, maxSpeed)
     {
-        Color = color;
+        Color = color;  
         WheelDrive = _wheelDrive.ContainsKey(driveType) ? _wheelDrive[driveType] : "unknown";
         ClassType = _class.ContainsKey(classType) ? _class[classType] : "unknown";
     }
