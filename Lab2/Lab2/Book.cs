@@ -4,7 +4,7 @@
 
     private string _name;
 
-    private string _genre;
+    private GenreFlyweight _genre;
 
     public int Id
     {
@@ -16,9 +16,9 @@
     }
     public string Genre
     {
-        get { return _genre; }
+        get { return _genre.Name; }
     }
-    public Book(int id, string name, string genre)
+    public Book(int id, string name, GenreFlyweight genre)
     {
         _id = id;
         _name = name;
@@ -26,7 +26,7 @@
     }
     public override string ToString()
     {
-        return $"{Id} {Name} {Genre}";
+        return $"[{Id}]: {Name},{Genre} ";
     }
     public string Display(int depth = 0)
     {

@@ -7,8 +7,8 @@
         _newSearcher = newSearcher;
     }
 
-    public List<Book> Search(string name)
+    public List<Book> Search(string genre)
     {
-        return _newSearcher.SearchByGenre(name);
+        return _newSearcher.SearchByGenre(genre);
     }
 }
