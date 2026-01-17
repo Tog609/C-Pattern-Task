@@ -3,7 +3,7 @@ public class Category : ILibraryItem
 {
     private List<ILibraryItem> _libraryItems = new List<ILibraryItem>();
 
-    private  string _name;
+    private string _name;
 
     public string Name
     {

@@ -1,4 +1,4 @@
 ﻿public interface ILibraryItem
 {
-    string Display(int depth = 0);
+    abstract string Display(int depth = 0);
 }

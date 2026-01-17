@@ -22,13 +22,11 @@
         Console.WriteLine("=== Guest tries to add books ===");
         guestProxy.AddBook(bookA);
         guestProxy.AddBook(bookB);
-
         Console.WriteLine("\n=== Admin adds books ===");
         adminProxy.AddBook(bookA);
         adminProxy.AddBook(bookB);
         adminProxy.AddBook(bookC);
         adminProxy.AddBook(bookD);
-
         Console.WriteLine("\n=== Guest searches for Sci-Fi books ===");
         var scifiBooks = guestProxy.Search("Sci-Fi");
         foreach (var b in scifiBooks)
