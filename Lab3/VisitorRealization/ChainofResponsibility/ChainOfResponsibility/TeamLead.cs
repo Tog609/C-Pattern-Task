@@ -2,6 +2,9 @@
 {
     private IHandler _next;
 
+    private const string _approvedByLeadMessage = "Approved by Team Lead";
+
+    private const byte _numberConstraint = 20;
     public TeamLead(IHandler next)
     {
         _next = next;
@@ -9,9 +12,9 @@
 
     public void Handle(string message)
     {
-        if (message.Length < 10)
+        if (message.Length < _numberConstraint)
         {
-            Console.WriteLine("Approved by Team Lead");
+            Console.WriteLine(_approvedByLeadMessage);
         }
         else
         {

@@ -21,7 +21,7 @@ public class Parallelepiped : IShape
     }
     public Parallelepiped (double ASide, double BSide, double CSide)
     {
-        if (ASide <= 0 && BSide <=0 & CSide <=0)
+        if (ASide <= 0 || BSide <=0 || CSide <=0)
         {
             throw new ArgumentException("Bad Value");
         }

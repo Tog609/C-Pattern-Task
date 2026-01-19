@@ -14,7 +14,7 @@
     }
     public Torus (double RDistance, double radius)
     {
-        if (RDistance <= 0 && radius<=0)
+        if (RDistance <= 0 || radius<=0)
         {
             throw new ArgumentException("BadValue");
         }

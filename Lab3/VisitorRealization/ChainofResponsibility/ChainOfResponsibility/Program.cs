@@ -5,7 +5,7 @@
         IHandler manager = new Manager();
         IHandler teamLead = new TeamLead(manager);
 
-        teamLead.Handle("Short");            
+        teamLead.Handle("Hello,help me");            
         teamLead.Handle("This is a long message"); 
 
     }
