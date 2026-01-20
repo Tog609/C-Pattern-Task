@@ -21,7 +21,7 @@
         _rDistance = RDistance;
         _radius = radius;
     }
-    public void Accept(IShapeVisitor shapeVisitor)
+    public void Approve(IShapeVisitor shapeVisitor)
     {
         shapeVisitor.Visit(this);
     }

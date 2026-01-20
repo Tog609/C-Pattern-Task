@@ -14,7 +14,7 @@
         }
         _side = side;
     }
-    public void Accept(IShapeVisitor visitor)
+    public void Approve(IShapeVisitor visitor)
     {
         visitor.Visit(this);
     }

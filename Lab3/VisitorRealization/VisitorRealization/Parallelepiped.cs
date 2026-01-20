@@ -29,7 +29,7 @@ public class Parallelepiped : IShape
         _bSide = BSide;
         _cSide = CSide;
     }
-    public void Accept(IShapeVisitor shapeVisitor)
+    public void Approve(IShapeVisitor shapeVisitor)
     {
         shapeVisitor.Visit(this);
     }

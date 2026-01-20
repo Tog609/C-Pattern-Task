@@ -1,4 +1,4 @@
 ﻿public interface IShape
 {
-    void Accept(IShapeVisitor visitor);
+    void Approve(IShapeVisitor visitor);
 }

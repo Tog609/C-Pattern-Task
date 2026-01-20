@@ -16,7 +16,7 @@ public class Program
         var visitor = new VolumeVisitor();
         foreach(var items in shapes)
         {
-            items.Accept(visitor);
+            items.Approve(visitor);
             Console.WriteLine($"Volume: {visitor.Volume:F3}");
         }
     }
